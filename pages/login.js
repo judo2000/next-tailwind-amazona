@@ -29,7 +29,7 @@ const LoginScreen = () => {
               required: 'Please enter your email address',
               pattern: {
                 value:
-                  /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,12})(\.[a-z]{2,12})?$/,
+                  /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,12})(\.[a-z]{2,12})?$/,
                 message: 'Please enter a valid email address',
               },
             })}
