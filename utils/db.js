@@ -30,6 +30,12 @@ async function disconnect() {
     }
   }
 }
-const db = { connect, disconnect };
+
+function convertDocToObj(doc) {
+  doc._id = doc._id.toString();
+  return doc;
+}
+
+const db = { connect, disconnect, convertDocToObj };
 
 export default db;
