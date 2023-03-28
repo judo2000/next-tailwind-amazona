@@ -86,8 +86,8 @@ const LoginScreen = () => {
           <button className="primary-button">Login</button>
         </div>
         <div className="mb-4">
-          Don&apos;t have and account &nbsp;
-          <Link href="/register">Register</Link>
+          Don&apos;t have an account &nbsp;
+          <Link href={`/register?redirect=${redirect || '/'}`}>Register</Link>
         </div>
       </form>
     </Layout>

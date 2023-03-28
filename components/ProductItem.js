@@ -5,7 +5,7 @@ import Link from 'next/link';
 const ProductItem = ({ product, addToCartHandler }) => {
   return (
     <div className="card">
-      <Link href={`/product/${product.slug}`}>
+      <Link href={`/products/${product.slug}`}>
         <img
           src={product.image}
           alt={product.name}
